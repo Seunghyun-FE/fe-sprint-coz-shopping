@@ -1,0 +1,34 @@
+.footer {
+box-sizing: border-box;
+
+width: 1280px;
+height: 58px;
+
+background: #FFFFFF;
+border-top: 1px solid rgba(0, 0, 0, 0.1);
+position:sticky;
+}
+/* flex: none;
+order: 2;
+flex-grow: 0; */
+
+
+.footer_content {
+position: absolute;
+left: 42.66%;
+right: 42.73%;
+top: 50%;
+bottom: 18.97%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 88.02%;
+/* or 11px */
+display: flex;
+align-items: center;
+
+color: #888888;
+
+}

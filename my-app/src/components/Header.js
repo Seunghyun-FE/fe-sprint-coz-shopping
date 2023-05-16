@@ -12,13 +12,15 @@ function Header() {
     return (
         <header>
           <span id = "title">
-            <img id = "logo" src="../logo.png" alt="logo" Link to="/"/>
+          <Link to="/">
+            <img id = "logo" src="../logo.png" alt="logo" />
+          </Link>
           </span>
           <span id = "HamButton" onClick={()=> toggleLink()}> //아이콘 생성
             <ul className={isOpen ? "show-link" : "hide-link"}>
               <li><Link to="/">Main Pages</Link></li>
-              <li><Link to="/ProductList"> Product List Page</Link></li>
-              <li><Link to="/Bookmark">Bookmark Page</Link></li>
+              <li><Link to="/product/list"> Product List Page</Link></li>
+              <li><Link to="/bookmark">Bookmark Page</Link></li>
             </ul>
 
           </span>

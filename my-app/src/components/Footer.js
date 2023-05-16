@@ -1,12 +1,14 @@
 import React from 'react';
 
-function footer() {
+function Footer() {
   
     return (
-        <footer>
+        <div>
             <span className='footer_content'>개인정보 처리방침|이용 약관</span>
             <span className='footer_content'>All rights reserved @ Codestates</span>
-        </footer>
+        </div>
         
     )
 }
+
+export default Footer;

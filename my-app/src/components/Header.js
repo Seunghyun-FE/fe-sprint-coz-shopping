@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 function Header() {
-    // const state = useSelctor(state => state.item)
     const [isOpen, setLink] = useState(false);
 
     const toggleLink = () => {
@@ -10,7 +9,7 @@ function Header() {
     }
 
     return (
-        <header>
+        <div>
           <span id = "title">
           <Link to="/">
             <img id = "logo" src="../logo.png" alt="logo" />
@@ -24,6 +23,8 @@ function Header() {
             </ul>
 
           </span>
-        </header>
+        </div>
     )
 }
+
+export default Header;

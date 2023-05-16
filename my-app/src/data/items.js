@@ -1,0 +1,53 @@
+
+export const item = [
+    {
+        "id" : 1,
+        "img" : "../img/Rectagle 4 (0).png",
+        "bookmark": false,
+        "title" : "애플워치 스트랩",    
+        "product": true,
+        "discount_percent" : "15%",
+        "price" : "12,900원",
+        "customer" : null,
+        "customer_count" : null,
+        "event_name" : null,
+    },
+    {
+        "id" : 2,
+        "img" : "../img/Rectagle 4 (1).png",
+        "bookmark": false,
+        "title" : "#산악용품",    
+        "product": null,
+        "discount_percent" : null,
+        "price" : null,
+        "customer" : null,
+        "customer_count" : null,
+        "event_name" : null,
+    },
+    {
+        "id" : 3,
+        "img" : "../img/Rectagle 4 (2).png",
+        "bookmark": false,
+        "title" : "여행을 떠나요",    
+        "product": null,
+        "discount_percent" : null,
+        "price" : null,
+        "customer" : null,
+        "customer_count" : null,
+        "event_name" : "여행 용품 할인전",
+    },
+    {
+        "id" : 4,
+        "img" : "../img/Rectagle 4 (3).png",
+        "bookmark": false,
+        "title" : "롯데아울렛",    
+        "product": null,
+        "discount_percent" : null,
+        "price" : null,
+        "customer" : "관심고객수",
+        "customer_count" : "123,456",
+        "event_name" : null,
+    },
+    
+
+];

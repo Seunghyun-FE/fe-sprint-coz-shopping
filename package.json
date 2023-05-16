@@ -1,5 +1,15 @@
 {
   "dependencies": {
     "react-router-dom": "^6.11.1"
-  }
+  },
+  "name": "fe-sprint-coz-shopping",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }

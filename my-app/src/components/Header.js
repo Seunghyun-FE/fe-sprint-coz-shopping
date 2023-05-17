@@ -1,29 +1,32 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
+import './Header.css'
+import { FaBars } from "react-icons/fa";
+import DropdownMenu from './DropdownMenu';
+
 
 function Header() {
-    // const state = useSelctor(state => state.item)
-    const [isOpen, setLink] = useState(false);
+    const [isToggle, setToggle] = useState(false);
 
-    const toggleLink = () => {
-      setLink(isOpen => !isOpen);
+    const handleToggle = () => {
+      setToggle(!isToggle);
     }
 
     return (
-        <header>
+        <div>
           <span id = "title">
           <Link to="/">
             <img id = "logo" src="../logo.png" alt="logo" />
           </Link>
           </span>
-          <span id = "HamButton" onClick={()=> toggleLink()}> //아이콘 생성
-            <ul className={isOpen ? "show-link" : "hide-link"}>
-              <li><Link to="/">Main Pages</Link></li>
-              <li><Link to="/product/list"> Product List Page</Link></li>
-              <li><Link to="/bookmark">Bookmark Page</Link></li>
-            </ul>
-
-          </span>
-        </header>
+          <div onClick={handleToggle}>
+            <FaBars size={30}></FaBars>
+          </div>
+           { isToggle && (
+            <DropdownMenu handleToggle={handleToggle}/>
+           )}
+        </div>
     )
 }
+
+export default Header;

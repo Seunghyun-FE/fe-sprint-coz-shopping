@@ -1,4 +1,5 @@
 .footer {
+display:flex;
 box-sizing: border-box;
 
 width: 1280px;
@@ -15,11 +16,6 @@ flex-grow: 0; */
 
 .footer_content {
 position: absolute;
-left: 42.66%;
-right: 42.73%;
-top: 50%;
-bottom: 18.97%;
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;

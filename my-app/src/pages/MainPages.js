@@ -8,4 +8,7 @@ const Main = () => {
             <Footer/>
         </div>
     )
+
 }
+
+export default Main;
